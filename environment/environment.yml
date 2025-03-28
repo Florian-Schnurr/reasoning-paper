@@ -1,0 +1,22 @@
+name: reasoning-paper
+channels:
+  - conda-forge
+  - anaconda
+dependencies:
+  - python=3.11
+  - pandas=2.2
+  - numba=0.60
+  - numpy=1.26
+  - ipykernel
+  - transformers
+  - sentence-transformers
+  - spacy
+  - more-itertools
+  - bertopic
+  - pip
+  - pip:
+    - azureml-defaults
+    - torch
+    - optimum[onnxruntime]
+    - azureml-inference-server-http
+    - pydantic<2
