@@ -12,8 +12,8 @@ Before running or deploying the system, you need the following HuggingFace model
 - `git clone https://huggingface.co/cardiffnlp/twitter-xlm-roberta-base-sentiment`
 
 Once you are ready to deploy, you can do so with the following commands, provided you have set up all necessary Azure resources:
-- az ml online-endpoint create -n mc-reasoning -f endpoint.yml
-- az ml online-deployment create -n reasoning-paper -f deployment.yml --all-traffic
+- `az ml online-endpoint create -n mc-reasoning -f endpoint.yml`
+- `az ml online-deployment create -n reasoning-paper -f deployment.yml --all-traffic`
 
 Inference calls to the endpoint should be in the following format, with mcid being a identifier unique to the overall text you are sending new parts off for live inferencing. 
 
